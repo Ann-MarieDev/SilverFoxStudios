@@ -79,6 +79,10 @@ header h1 {
     margin-bottom: 10px;
 }
 
+.livestream {
+    border: 4px sold white;
+}
+
 .content p {
     font-size: 1.1em;
 }
