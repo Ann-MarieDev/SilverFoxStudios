@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Main layout styles */
+.main-layout {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 1450px;
+    /*background-color: #1e1e1e; -- Would have weird look*/
+    padding: 50px;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #ece920;
+}
+
+/* Subcategory indentation */
+.sub-category {
+    margin-left: 20px; /* Indents subcategories */
+}
+
+/* Content section styles */
+.content {
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-right: 250px;
+    padding-left: 250px;
+    background-color: #181818;
+    font-size: large;
+    line-height: 38px;
+
+}
+
+.content section {
+    margin-bottom: 40px;
+    
+}
+
+.content h2 {
+    border-bottom: 2px solid #ece920;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1em;
+}
+
+#gamemakerpic {
+    width: 100%;
+    height: 100%;
+}
+
+#procreatepic {
+    width: 100%;
+    height: 100%;
+}
+
+#flstudiospic {
+    width: 100%;
+    height: 100%;
+}
+
+#pixilartpic {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling the Twitch iframe */
+.twitch-embed {
+    width: 100%;
+    max-width: 800px; /* Set a max-width for the embed */
+    height: 450px;
+    border: none; /* Remove border around the iframe */
+}
+
+/* Optional: Center the stream on the page */
+.twitch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
