@@ -102,19 +102,3 @@ header h1 {
     width: 100%;
     height: 100%;
 }
-
-/* Styling the Twitch iframe */
-.twitch-embed {
-    width: 100%;
-    max-width: 800px; /* Set a max-width for the embed */
-    height: 450px;
-    border: none; /* Remove border around the iframe */
-}
-
-/* Optional: Center the stream on the page */
-.twitch-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
