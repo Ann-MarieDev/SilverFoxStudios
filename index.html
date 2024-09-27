@@ -162,20 +162,55 @@
         <section id="livestream">
             <h2>Watch us live on Twitch</h2>
             <p>Join us on Twitch for live game development streams!</p>
-            <iframe src="https://player.twitch.tv/?video=2251451701&parent=" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
 
-               
+            <!-- Load the Twitch embed JavaScript file -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+            <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "monstercat",
+                // Only needed if this page is going to be embedded on other websites
+                parent: ["embed.example.com", "othersite.example.com"]
+            });
+            </script>
         </section>
 
-        <section>
-            <section id="contacts">
-                <h2>Contact us or check out our socials!</h2>
-                <p>Join us on Discord for behind the scenes look into our development! (Or even become a game tester).</p>
-                <p>© gracie hutchins 2024</p>
+        <section id="contacts">
+            <h2>Contact us or check out our socials!</h2>
+            <p>Join us on Discord for behind the scenes look into our development! (Or even become a game tester).</p>
+            <!--break-->
+            <br>
+            <!--icons-->
+            <section id="icons">
+            <a href="https://discord.gg/VHyhCpxqU2" target="_blank" id="discordlink"><img src="discordicon.png" alt="Image of Discord Icon (Not mine)." id="discordimg"></a><a href="https://www.tiktok.com/@seasofsecrets?_t=8q4XV2UDBUs&_r=1" target="_blank" id="tiktoklink"><img src="tiktoklogo.png" alt="Image of Tiktok Icon (Not mine)." id="tiktokimg"></a><a href="https://www.instagram.com/seasofsecrets?igsh=MWQ0Zm1yNnhucHliZw%3D%3D&utm_source=qr" target="_blank" id="instalink"><img src="instagrampng.png" alt="Image of Instagram Icon (Not mine)." id="instaimg"></a>            
+            </section> 
+            <p id="copywrite">© gracie hutchins 2024</p>
         </section>
+
+        <!--line break-->
+        <br>
+
+        <!--Disclaimer-->
+        <footer id="footer">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Disclaimer</button>
+                <div id="myDropdown" class="dropdown-content">
+                <p><strong>Disclaimer:</strong> All images used on this website, unless otherwise stated, are not owned by Silver Fox Studios. These images have been sourced from the web and are being used solely for illustrative and educational purposes, to showcase the tools and game engines we use in the development process. We do not claim ownership of these images, and their respective copyrights belong to their original creators. If you are the owner of any image and would like it removed, please contact us and we will promptly address the issue.</p>
+                <p>Please note that this website and its content are provided for informational purposes only, particularly to offer visual references of the tools we use during game development (such as Game Maker, Procreate, FL Studio, etc.). We do not endorse, sponsor, or have any official association with these tools or their creators.</p>
+                </div>
+            </div>
+        </footer>
+
+
 
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
 <!--If your reading through this... I am not a front end developer, I apologize for the terrible "code."-->
