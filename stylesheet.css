@@ -203,3 +203,90 @@ header h1 {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+  /* General mobile adjustments */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Sidebar collapses to the top or bottom */
+    .sidebar {
+        width: 100%;  /* Make sidebar take full width */
+        position: relative;  /* Make it relative so it stacks on top */
+        padding: 10px;  /* Reduce padding */
+    }
+
+    .sidebar ul li {
+        text-align: center; /* Center align for better view */
+    }
+
+    .sidebar ul li a {
+        font-size: 16px; /* Decrease font size */
+    }
+
+    /* Main content adjustments */
+    .content {
+        padding-left: 20px;  /* Less padding for smaller screens */
+        padding-right: 20px;
+    }
+
+    /* Resize all images */
+    #gamemakerpic,
+    #procreatepic,
+    #flstudiospic,
+    #pixilartpic,
+    #discordimg,
+    #tiktokimg,
+    #instaimg {
+        width: 100%; /* Ensure images take up the full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Footer text alignment */
+    #copywrite {
+        font-size: 12px;  /* Smaller font for copyright notice */
+        text-align: center;  /* Center-align for smaller screens */
+    }
+
+    /* Social icons in a single row */
+    #icons {
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    /* Resize social icons */
+    #discordimg,
+    #tiktokimg,
+    #instaimg {
+        width: 40px;  /* Smaller size for social icons */
+        height: 40px;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;  /* Smaller text for tiny devices */
+    }
+
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Header adjustment */
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;  /* Smaller font size for the title */
+    }
+
+    /* Sidebar link font size */
+    .sidebar ul li a {
+        font-size: 14px;  /* Smaller font for sidebar links */
+    }
+}
